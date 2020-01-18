@@ -3,34 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const server = http.createServer((req, res) => {
-    // HOMEPAGE OR INDEX.HTML
-    // if(req.url === '/') {
-    //     fs.readFile(path.join(__dirname, 'public', 'index.html'), (err, data) => {
-    //         if(err) throw err;
-    //         res.writeHead(200, { 'Content-Type':  'text/html'}) // 200 means everything is ok
-    //         res.end(data);
-    //     })
-    // }
-    // ABOUT PAGE
-    // if(req.url === '/about') {
-    //     fs.readFile(path.join(__dirname, 'public', 'about.html'), (err, data) => {
-    //         if(err) throw err;
-    //         res.writeHead(200, { 'Content-Type':  'text/html'}) // 200 means everything is ok
-    //         res.end(data);
-    //     })
-    // }
-
-    // REST API JSON just node
-    // if(req.url === '/api/users') {
-    //     const users = [
-    //         { name: 'Levi', age: 26 },
-    //         { name: 'Mikasa', age: 20 },
-    //         { name: 'Gerald', age: 25 }
-    //     ];
-    //     res.writeHead(200, { 'Content-Type': 'application/json' });
-    //     res.end(JSON.stringify(users));
-    // }
-
+    
     // BUILD PATH DYNAMIC
     let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url)
 
