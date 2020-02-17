@@ -2,10 +2,10 @@
   "name": "node_crash_course",
   "version": "1.0.0",
   "description": "Node Crash Course",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "server": "node index",
-    "dev": "nodemon index"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "author": "Norrico Gerald Biason",
   "license": "ISC",

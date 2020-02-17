@@ -3,10 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 const server = http.createServer((req, res) => {
-    
     // BUILD PATH DYNAMIC
     let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url)
-
 
     // Extension of file
     let extname = path.extname(filePath);
